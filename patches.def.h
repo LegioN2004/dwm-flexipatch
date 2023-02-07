@@ -19,7 +19,7 @@
  * Awesomebar takes precedence over fancybar.
  * https://dwm.suckless.org/patches/awesomebar/
  */
-#define BAR_AWESOMEBAR_PATCH 0
+#define BAR_AWESOMEBAR_PATCH 1
 
 /* This patch depends on statuscmd patch and adds integration with a (patched)
  * dwmblocks instance to give a clickable status bar. One must not necessarily
@@ -167,7 +167,7 @@
 /* The systray patch adds systray for the status bar.
  * https://dwm.suckless.org/patches/systray/
  */
-#define BAR_SYSTRAY_PATCH 0
+#define BAR_SYSTRAY_PATCH 1
 
 /* Show tag symbols in the bar. */
 #define BAR_TAGS_PATCH 1
@@ -249,7 +249,7 @@
  * when including this patch.
  * https://dwm.suckless.org/patches/alpha/
  */
-#define BAR_ALPHA_PATCH 0
+#define BAR_ALPHA_PATCH 1
 
 /* This patch introduces alternative tags which can be switched on the fly for the
  * sole purpose of providing visual aid.
@@ -1310,16 +1310,6 @@
  * fullscreen mode, hence this is enabled separately from the main vanitygaps patch.
  */
 #define VANITYGAPS_MONOCLE_PATCH 0
-
-/* By default MOD+Tab will take the user back to the previous tag only. If the user keeps
- * using MOD+Tab then the view will switch back and forth between the current and previous tag.
- * This patch allows dwm to keep a longer history of previous tag changes such that MOD+Tab can
- * be pressed multiple times to go further back to earlier tag selections.
- *
- * The number of history elements is defined by the NUMVIEWHIST macro in dwm.c and defaults to
- * the number of tags in the system.
- */
-#define VIEW_HISTORY_PATCH 0
 
 /* Follow a window to the tag it is being moved to.
  * https://dwm.suckless.org/patches/viewontag/
